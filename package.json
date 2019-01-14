@@ -1,0 +1,38 @@
+{
+  "name": "wallet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cryptr": "^4.0.2",
+    "dotenv": "^6.2.0",
+    "firebase-admin": "^6.5.0",
+    "memory-cache": "^0.2.0",
+    "moment": "^2.23.0",
+    "moment-timezone": "^0.5.23",
+    "promptpay-qr": "^0.4.4",
+    "qrcode": "^1.3.2",
+    "qrcode-svg": "^1.0.0",
+    "ramda": "^0.26.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "restify": "^7.5.0",
+    "sha1": "^1.1.1"
+  },
+  "scripts": {
+    "build": "babel src -d dist --source-maps",
+    "serve": "node dist/index.js",
+    "start": "babel-node index.js",
+    "dev": "nodemon index.js --exec babel-node"
+  },
+  "babel": {
+    "presets": [
+      "node8"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-node8": "^1.2.0",
+    "nodemon": "^1.18.9"
+  }
+}
